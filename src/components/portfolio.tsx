@@ -1,8 +1,6 @@
 import { portfolioData } from "@/lib/mockData/portfolioData";
 import { useState } from "react";
-import { Link } from "react-router-dom";
 import PortfolioDetailsPopUp from "./portfolioDetailsPopUp";
-import { h5 } from "motion/react-client";
 
 const filters = [
   { label: "Todos los Sistemas", filter: "all" },
