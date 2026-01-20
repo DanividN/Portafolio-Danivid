@@ -27,7 +27,6 @@ const Portfolio = () => {
               </div>
             </div>
             <div className="col-xxl-7 col-12">
-              {/* filter buttons */}
               <nav className="project-filter">
                 <ul
                   className="d-flex flex-wrap justify-content-xxl-end wow fadeInUp"
