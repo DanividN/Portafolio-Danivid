@@ -7,12 +7,12 @@ const Footer = () => {
             D<span className="txt-orange">ani</span>vid
           </h4>
           <p className="copy-right mx-auto mx-md-0">
-            © 2025{" "}
+            © 2026{" "}
             <a
               href="https://themeforest.net/user/themes_mountain"
               target="_blank"
             >
-              Pertest{" "}
+              Danivid N{" "}
             </a>
             - All rights reserved.
           </p>

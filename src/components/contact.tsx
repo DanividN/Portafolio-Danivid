@@ -47,7 +47,7 @@ const Contact = () => {
               <div className="user-details row">
                 <div className="input-box col-md-6">
                   <label className="details" htmlFor="first-name">
-                    First Name
+                    Nombre(s)
                   </label>
                   <input
                     type="text"
@@ -61,7 +61,7 @@ const Contact = () => {
                 </div>
                 <div className="input-box col-md-6">
                   <label className="details" htmlFor="last-name">
-                    Last Name
+                    Apellido(s)
                   </label>
                   <input
                     type="text"
@@ -89,7 +89,7 @@ const Contact = () => {
                 </div>
                 <div className="input-box col-md-6">
                   <label className="details" htmlFor="phone">
-                    Phone Number
+                    Teléfono
                   </label>
                   <input
                     type="tel"
@@ -104,14 +104,14 @@ const Contact = () => {
               </div>
               <div className="user-message">
                 <label className="details" htmlFor="message">
-                  Message
+                  Mensaje
                 </label>
                 <textarea
                   id="message"
                   name="message"
                   cols={1}
                   rows={2}
-                  placeholder="Write your message..."
+                  placeholder="Escribe tu mensaje..."
                   autoComplete="off"
                   required
                   defaultValue={""}
@@ -142,23 +142,13 @@ const Contact = () => {
               <div className="social-media wow fadeInUp" data-wow-delay=".9s">
                 <ul>
                   <li>
-                    <Link to="http://www.facebook.com" target="_blank">
-                      <i className="fa-brands fa-facebook-f" />
+                    <Link to="https://www.linkedin.com/in/danivid-neri-pichardo-742068168/">
+                      <i className="bi bi-linkedin" />
                     </Link>
                   </li>
                   <li>
-                    <Link to="https://x.com" target="_blank">
-                      <i className="fa-brands fa-x-twitter" />
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="https://www.behance.net" target="_blank">
-                      <i className="fa-brands fa-behance" />
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="https://dribbble.com" target="_blank">
-                      <i className="fa-brands fa-dribbble" />
+                    <Link to="https://github.com/DanividN">
+                      <i className="bi bi-github" />
                     </Link>
                   </li>
                 </ul>
