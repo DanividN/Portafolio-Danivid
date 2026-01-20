@@ -1,6 +1,14 @@
 import { Link } from "react-router-dom";
 
 const Hero = () => {
+  const descargarCV = () => {
+    const link = document.createElement("a");
+    link.href = "/CV_DanividNeriPichardo.pdf";
+    link.download = "Danivid_Neri_Pichardo_CV.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
   return (
     <section className="hero section-pt">
       <div className="section-wrapper">
@@ -19,7 +27,7 @@ const Hero = () => {
               height={526}
               className="profile-pic wow fadeInLeft"
               data-wow-delay=".9s"
-              src="/images/hero/profile-pic.png"
+              src="/images/hero/danivindnp.png"
               alt="creativemela"
             />
           </div>
@@ -64,7 +72,7 @@ const Hero = () => {
                 className="intro-info d-none d-md-block wow fadeInUp"
                 data-wow-delay=".9s"
               >
-                Soy ingeniero en TIC’s y desarrollador web con más de tres años
+                Soy ingeniero en TIC’s y desarrollador web con más de 4 años
                 de experiencia. Trabajo principalmente con Laravel y React, y me
                 apasiona crear soluciones tecnológicas eficientes y bien
                 diseñadas.
@@ -86,7 +94,7 @@ const Hero = () => {
                         Contacto <i className="bi bi-arrow-up-right" />
                       </button>
                     </Link>
-                    <button type="button" className="bttn bttn-secondary">
+                    <button type="button" className="bttn bttn-secondary" onClick={descargarCV}>
                       Descargar CV <i className="bi bi-arrow-up-right" />
                     </button>
                   </div>
@@ -103,23 +111,16 @@ const Hero = () => {
                     data-wow-delay="1.9s"
                   >
                     <li>
-                      <Link to="http://www.facebook.com" target="_blank">
-                        <i className="fa-brands fa-facebook-f" />
+                      <Link to="https://github.com/DanividN" target="_blank">
+                        <i className="fa-brands fa-github" />
                       </Link>
                     </li>
                     <li>
-                      <Link to="https://x.com" target="_blank">
-                        <i className="fa-brands fa-x-twitter" />
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="https://www.behance.net" target="_blank">
-                        <i className="fa-brands fa-behance" />
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="https://dribbble.com" target="_blank">
-                        <i className="fa-brands fa-dribbble" />
+                      <Link
+                        to="https://www.linkedin.com/in/danivid-neri-pichardo-742068168/"
+                        target="_blank"
+                      >
+                        <i className="fa-brands fa-linkedin-in" />
                       </Link>
                     </li>
                   </ul>
@@ -128,7 +129,7 @@ const Hero = () => {
             </div>
           </div>
           <span className="profession wow fadeInUp" data-wow-delay="1.0s">
-            UI UX DESIGNER
+            Desarrollador Web
           </span>
           <div className="m-content d-flex flex-wrap d-block d-md-none">
             <h6 className="intro-info wow fadeInUp" data-wow-delay="1.2s">

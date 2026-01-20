@@ -118,7 +118,7 @@ const Contact = () => {
                 />
               </div>
               <button type="submit" className="bttn  bttn-theme">
-                Let's Talk <i className="bi bi-arrow-up-right" />
+                Contacto <i className="bi bi-arrow-up-right" />
               </button>
             </form>
             <p id="form-message" />

@@ -87,7 +87,7 @@ const SidebarContact = ({
             to="#contact"
             className="d-flex justify-content-center lets-talk-btn align-items-center gap-2"
           >
-            <span className="get-text">Let's Talk</span>
+            <span className="get-text">Contacto</span>
             <span>
               <i className="bi bi-arrow-up-right" />
             </span>

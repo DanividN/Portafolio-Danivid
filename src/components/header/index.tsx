@@ -58,7 +58,7 @@ const Header = () => {
                 to="#contact"
                 className="d-none d-xl-flex lets-talk align-items-center"
               >
-                <span className="get-text">Let's Talk&nbsp;</span>
+                <span className="get-text">Contacto&nbsp;</span>
                 <span>
                   <i className="bi bi-arrow-up-right" />
                 </span>

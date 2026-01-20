@@ -1,17 +1,20 @@
 import { useState } from "react";
 import { Modal } from "react-responsive-modal";
 import "react-responsive-modal/styles.css";
+import { Link } from "react-router-dom";
 
-const PortfolioDetailsPopUp = () => {
+const PortfolioDetailsPopUp = ({ links }: { links: string }) => {
   const [open, setOpen] = useState(false);
 
   return (
     <>
-      <div onClick={() => setOpen(true)} className="rounded-btn modal-popup">
+      {/* <div onClick={() => setOpen(true)} className="rounded-btn modal-popup"> */}
+        <Link to={links} target="_blank" className="rounded-btn modal-popup">
         View <i className="bi bi-arrow-up-right" />
-      </div>
+        </Link>
+      {/* </div> */}
 
-      <Modal
+      {/* <Modal
         open={open}
         onClose={() => setOpen(false)}
         classNames={{ closeButton: "mfp-close", modal: "popup_content_area" }}
@@ -106,7 +109,7 @@ const PortfolioDetailsPopUp = () => {
             </div>
           </div>
         </div>
-      </Modal>
+      </Modal> */}
     </>
   );
 };

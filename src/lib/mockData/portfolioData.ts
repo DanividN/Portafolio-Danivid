@@ -4,39 +4,53 @@ export type Portfolio = {
     size?: "big" | "mid";
     img: string;
     title: string;
+    user?: string;
+    pwd?: string;
+    link: string;
 };
 
 export const portfolioData: Portfolio[] = [
     {
         id: 1,
-        category: ["website"],
+        category: ["sistemas"],
         size: "big",
-        img: "/images/projects/project-1.png",
-        title: "Web Design",
+        img: "/images/projects/inventarios/inventarios-1.png",
+        title: "Sistemas de Inventarios",
+        user: "admin@gmail.com",
+        pwd: "123456",
+        link: "https://inventarios-full-production.up.railway.app/"
     },
     {
         id: 2,
-        category: ["ui_ux"],
+        category: ["paginas"],
         size: "mid",
-        img: "/images/projects/project-2.png",
-        title: "UI/UX",
+        img: "/images/projects/moms-1.png",
+        title: "Mom's and Tots",
+        link: "https://momsandtots.com.mx/"
     },
     {
         id: 3,
-        category: ["apps", "graphics"],
-        img: "/images/projects/project-3.png",
-        title: "Apps Design",
+        category: ["paginas"],
+        img: "/images/projects/flising.png",
+        title: "Flising",
+        link: "https://flising.com/"
     },
     {
         id: 4,
-        category: ["graphics", "ui_ux"],
-        img: "/images/projects/project-4.png",
-        title: "Graphics Design",
+        category: ["sistemas"],
+        img: "/images/projects/sportcenter.png",
+        title: "Sport Center",
+        user: "admin@gmail.com",
+        pwd: "123456",
+        link: "https://sportcenter.com.mx/"
     },
     {
         id: 5,
-        category: ["website", "apps"],
-        img: "/images/projects/project-5.png",
-        title: "Web Design",
+        category: ["sistemas"],
+        img: "/images/projects/adquisiciones.png",
+        title: "Sistema de Adquisiciones",
+        user: "admin@gmail.com",
+        pwd: "123456",
+        link: "https://adquisiciones.com.mx/"
     },
 ];

@@ -2,13 +2,12 @@ import { portfolioData } from "@/lib/mockData/portfolioData";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import PortfolioDetailsPopUp from "./portfolioDetailsPopUp";
+import { h5 } from "motion/react-client";
 
 const filters = [
-  { label: "All Design", filter: "all" },
-  { label: "UI/UX", filter: "ui_ux" },
-  { label: "Graphics Design", filter: "graphics" },
-  { label: "Application Design", filter: "apps" },
-  { label: "Website Design", filter: "website" },
+  { label: "Todos los Sistemas", filter: "all" },
+  { label: "Sistemas Web", filter: "sistemas" },
+  { label: "Paginas Web", filter: "paginas" },
 ];
 const Portfolio = () => {
   const [selectedCategory, setselectedCategory] = useState("all");
@@ -25,7 +24,7 @@ const Portfolio = () => {
           <div className="section-title-wrapper row">
             <div className="col-xxl-5 col-12">
               <div className="section-title wow fadeInUp" data-wow-delay=".3s">
-                <h3>Latest Project</h3>
+                <h3>Últimos Proyectos</h3>
                 <span />
               </div>
             </div>
@@ -55,6 +54,7 @@ const Portfolio = () => {
           <div className="projects-container">
             {/* <div className="gutter-sizer" /> */}
             {filteredItems.map((project, index) => (
+
               <div
                 key={project.id}
                 className={`grid-item ${
@@ -62,7 +62,7 @@ const Portfolio = () => {
                 } ${project.category.join(" ")} wow fadeInUp`}
                 data-wow-delay={`${0.6 + index * 0.2}s`}
               >
-                <div className="project-item">
+                <div className="project-item ">
                   <figure>
                     <img
                       width={746}
@@ -72,22 +72,20 @@ const Portfolio = () => {
                     />
                   </figure>
                   <div className="overlay-content">
-                    <PortfolioDetailsPopUp />
-                    <h4 className="title">{project.title}</h4>
+                    <PortfolioDetailsPopUp links={project.link} />
+
+                    {project.user === "admin@gmail.com" ? (
+                      <h6 className="title">
+                        <strong>{project.title}:</strong> User:{project.user}, Pass:{project.pwd}
+                      </h6>
+                    ) : (
+                      <h4 className="title">{project.title}</h4>
+                    )}
+
                   </div>
                 </div>
               </div>
             ))}
-          </div>
-          <div
-            className="view-all-btn-wrapper wow fadeInUp"
-            data-wow-delay="1.6s"
-          >
-            <Link to="#" className="bttn-round">
-              <span className="btn-txt">
-                View All <i className="bi bi-arrow-up-right" />
-              </span>
-            </Link>
           </div>
         </div>
       </div>

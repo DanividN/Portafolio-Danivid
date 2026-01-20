@@ -17,11 +17,6 @@ const Home = () => {
       <About />
       <Portfolio />
       <Services />
-      <Testimonial />
-      <Marquee />
-      <Pricing />
-      <Brands />
-      <BlogList />
     </main>
   );
 };

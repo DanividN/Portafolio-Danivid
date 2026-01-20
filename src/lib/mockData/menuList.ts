@@ -6,38 +6,23 @@ export type MenuItem = {
 
 export const menuList: MenuItem[] = [
     {
-        label: "Home",
+        label: "Inicio",
         href: "/",
     },
     {
-        label: "About Me",
+        label: "Acerca de mí",
         href: "/#about",
     },
     {
-        label: "Portfolio",
+        label: "Portafolio",
         href: "/#portfolio",
     },
     {
-        label: "Services",
+        label: "Servicios",
         href: "/#services",
     },
     {
-        label: "Testimonial",
-        href: "/#testimonial",
-    },
-    {
-        label: "Blog",
-        href: "/#blogs",
-        subMenu: [
-            { label: "Blog", href: "/blog-2" },
-            { label: "Blog Page", href: "/blog" },
-            { label: "Blog List", href: "/blog-list" },
-            { label: "Blog Right Sidebar", href: "/blog-right-sidebar" },
-            { label: "Blog Details", href: "/blog-details" },
-        ],
-    },
-    {
-        label: "Contact",
+        label: "Contacto",
         href: "/#contact",
     },
 ];
