@@ -15,10 +15,10 @@ export const useContactForm = () => {
 
     try {
       const result = await emailjs.sendForm(
-        "YOUR_SERVICE_ID",
-        "YOUR_TEMPLATE_ID",
+        "service_gk4i69p",
+        "template_xyzp4w9",
         form,
-        "YOUR_PUBLIC_KEY",
+        "gdg92K_bOlI9gGQUA",
       );
 
       console.log("SUCCESS!", result.text);
