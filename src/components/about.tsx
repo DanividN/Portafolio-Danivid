@@ -12,7 +12,7 @@ const About = () => {
           Soy ingeniero en TIC’s y desarrollador web con más de 4 años de
           experiencia. Trabajo principalmente con{" "}
           <span className="txt-orange">Laravel</span>, tecnología con la que
-          tengo cuatro años de práctica, y cuento con un año de experiencia
+          tengo cuatro años de práctica, y cuento con experiencia
           usando <span className="txt-orange">React</span> para el desarrollo
           frontend.
         </h3>
