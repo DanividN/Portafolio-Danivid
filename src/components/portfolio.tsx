@@ -72,7 +72,7 @@ const Portfolio = () => {
                     />
                   </figure>
                   <div className="overlay-content">
-                    <PortfolioDetailsPopUp links={project.link} />
+                    <PortfolioDetailsPopUp liga={project.link} />
 
                     {project.user === "admin@gmail.com" ? (
                       <h6 className="title">

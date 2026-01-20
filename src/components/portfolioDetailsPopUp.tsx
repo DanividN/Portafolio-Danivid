@@ -3,13 +3,13 @@ import { Modal } from "react-responsive-modal";
 import "react-responsive-modal/styles.css";
 import { Link } from "react-router-dom";
 
-const PortfolioDetailsPopUp = ({ links }: { links: string }) => {
+const PortfolioDetailsPopUp = ({ liga }: { liga: string }) => {
   const [open, setOpen] = useState(false);
 
   return (
     <>
       {/* <div onClick={() => setOpen(true)} className="rounded-btn modal-popup"> */}
-        <Link to={links} target="_blank" className="rounded-btn modal-popup">
+        <Link to={liga} target="_blank" className="rounded-btn modal-popup">
         View <i className="bi bi-arrow-up-right" />
         </Link>
       {/* </div> */}
