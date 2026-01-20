@@ -13,7 +13,7 @@ const Services = () => {
     <section id="services" className="services section-pt">
       <div className="container">
         <div className="section-title wow fadeInUp" data-wow-delay=".3s">
-          <h3>Latest Services</h3>
+          <h3>Servicios</h3>
           <span />
         </div>
         <div className="service-item-wrapper">
@@ -28,16 +28,6 @@ const Services = () => {
               />
             );
           })}
-        </div>
-        <div
-          className="view-all-btn-wrapper wow fadeInUp"
-          data-wow-delay="1.3s"
-        >
-          <Link to="#" className="bttn-round">
-            <span className="btn-txt">
-              View All <i className="bi bi-arrow-up-right" />
-            </span>
-          </Link>
         </div>
       </div>
     </section>
