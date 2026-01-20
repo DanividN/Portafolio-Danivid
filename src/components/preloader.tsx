@@ -42,7 +42,7 @@ const Preloader = () => {
           <div className="main-logo">
             <div className="logo">
               <h2>
-                P<span className="txt-orange">e</span>rtest
+               D<span className="txt-orange">ani</span>vid
               </h2>
             </div>
           </div>

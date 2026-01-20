@@ -40,7 +40,7 @@ const Header = () => {
             <div className="main-logo">
               <Link to="/" className="logo">
                 <h4>
-                  P<span className="txt-orange">e</span>rtest
+                  D<span className="txt-orange">ani</span>vid
                 </h4>
               </Link>
             </div>

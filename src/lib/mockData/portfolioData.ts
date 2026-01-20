@@ -42,7 +42,7 @@ export const portfolioData: Portfolio[] = [
         title: "Sport Center",
         user: "admin@gmail.com",
         pwd: "123456",
-        link: "https://sportcenter.com.mx/"
+        link: "https://eco-sportclub-gobti.netlify.app/login"
     },
     {
         id: 5,
@@ -51,6 +51,6 @@ export const portfolioData: Portfolio[] = [
         title: "Sistema de Adquisiciones",
         user: "admin@gmail.com",
         pwd: "123456",
-        link: "https://adquisiciones.com.mx/"
+        link: "http://31.220.107.90/auth/login"
     },
 ];
