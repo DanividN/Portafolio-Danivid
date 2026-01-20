@@ -30,12 +30,11 @@ const Contact = () => {
         <div className="contact-content row">
           <div className="col-lg-6">
             <span className="large-txt wow fadeInUp" data-wow-delay=".3s">
-              Let’s Contact!
+              ¡Contacto!
             </span>
             <p className="wow fadeInUp" data-wow-delay=".4s">
-              I am always open to discussing new projects, creative ideas, or
-              opportunities to be a part of your vision. Feel free to reach out
-              through.
+              Estoy siempre abierto a discutir nuevos proyectos, ideas creativas
+              o oportunidades para ser parte de tu visión. ¡Házmelo saber!
             </p>
             <form
               id="contact-form"
