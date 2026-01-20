@@ -27,34 +27,32 @@ const SidebarContact = ({
           </a> */}
           <Link to="/" className="logo">
             <h4>
-              P<span className="txt-orange">e</span>rtest
+              D<span className="txt-orange">ani</span>vid
             </h4>
           </Link>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil,
-            aliquid dolorum optio repellat rerum commodi accusantium rem
-            praesentium possimus dignissimos.
+            Estoy disponible para proyectos freelance o colaboraciones. ¡Hablemos!
           </p>
           <div className="sub-contact-left d-grid">
             <div className="sub-contac-item">
               <div className="address-widget">
-                <span className="address d-block">address</span>
-                <span className="textp">Victoria Street, London</span>
+                <span className="address d-block">Dirección</span>
+                <span className="textp">Metepec, Estado de México</span>
               </div>
             </div>
             <div className="sub-contac-item">
               <div className="address-widget">
                 <span className="address d-block">email</span>
                 <Link to="#" className="textp">
-                  pertest@email.com
+                  danividnerip@email.com
                 </Link>
               </div>
             </div>
             <div className="sub-contac-item">
               <div className="address-widget">
-                <span className="address d-block">call now</span>
+                <span className="address d-block">Teléfono</span>
                 <Link to="jasacript:void(0)" className="textp">
-                  +89 4758 2154 021
+                  +52 7227861343
                 </Link>
               </div>
             </div>
@@ -62,23 +60,13 @@ const SidebarContact = ({
           <div className="sub-contac-right mb-60 position-relative">
             <ul className="social d-flex gap-3">
               <li>
-                <Link to="#">
-                  <i className="bi bi-facebook" />
-                </Link>
-              </li>
-              <li>
-                <Link to="#">
-                  <i className="bi bi-twitter" />
-                </Link>
-              </li>
-              <li>
-                <Link to="#">
+                <Link to="https://www.linkedin.com/in/danivid-neri-pichardo-742068168/">
                   <i className="bi bi-linkedin" />
                 </Link>
               </li>
               <li>
-                <Link to="#">
-                  <i className="bi bi-youtube" />
+                <Link to="https://github.com/DanividN">
+                  <i className="bi bi-github" />
                 </Link>
               </li>
             </ul>
