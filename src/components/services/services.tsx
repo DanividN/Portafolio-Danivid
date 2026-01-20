@@ -1,10 +1,9 @@
 import { servicesData } from "@/lib/mockData/servicesData";
 import { useState } from "react";
-import { Link } from "react-router-dom";
 import ServiceCard from "./serviceCard";
 
 const Services = () => {
-  const [activeId, setActiveId] = useState<number | null>(1);
+  const [activeId, setActiveId] = useState<number | null>(0);
 
   const toggleItem = (id: number) => {
     setActiveId((prev) => (prev === id ? null : id));
