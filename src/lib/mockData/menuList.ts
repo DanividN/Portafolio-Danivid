@@ -28,43 +28,24 @@ export const menuList: MenuItem[] = [
 ];
 
 export const menuListDark: MenuItem[] = [
-    {
-        label: "Home",
-        href: "/home-2",
-        subMenu: [
-            { label: "Home One", href: "/" },
-            { label: "Home Two", href: "/home-2" },
-        ],
+{
+        label: "Inicio",
+        href: "/",
     },
     {
-        label: "About Me",
-        href: "/home-2#about",
+        label: "Acerca de mí",
+        href: "/#about",
     },
     {
-        label: "Portfolio",
-        href: "/home-2#portfolio",
+        label: "Portafolio",
+        href: "/#portfolio",
     },
     {
-        label: "Services",
-        href: "/home-2#services",
+        label: "Servicios",
+        href: "/#services",
     },
     {
-        label: "Testimonial",
-        href: "/home-2#testimonial",
-    },
-    {
-        label: "Blog",
-        href: "/home-2#blogs",
-        subMenu: [
-            { label: "Blog", href: "/blog-2-dark" },
-            { label: "Blog Page", href: "/blog-dark" },
-            { label: "Blog List", href: "/blog-list-dark" },
-            { label: "Blog Right Sidebar", href: "/blog-right-sidebar-dark" },
-            { label: "Blog Details", href: "/blog-details-dark" },
-        ],
-    },
-    {
-        label: "Contact",
-        href: "/home-2#contact",
+        label: "Contacto",
+        href: "/#contact",
     },
 ];

@@ -1,6 +1,6 @@
 import { menuList, menuListDark } from "@/lib/mockData/menuList";
 import { useEffect, useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import MobileNavigation from "./mobileNavigation";
 import Navigation from "./navigation";
 import SidebarContact from "./sidebarContact";
@@ -9,11 +9,11 @@ const Header = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [mobileNavigationOpen, setMobileNavigationOpen] = useState(false);
   const [isFixed, setIsFixed] = useState(false);
-  const pathName = useLocation().pathname;
-  const newMenuList =
-    pathName === "/home-2" || pathName.endsWith("dark")
-      ? menuListDark
-      : menuList;
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
+
+  // Usar menuListDark o menuList según el estado del tema
+  const newMenuList = isDarkMode ? menuListDark : menuList;
 
   useEffect(() => {
     const handleScroll = () => {
@@ -27,6 +27,19 @@ const Header = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  // Aplicar clase al body cuando cambie el tema
+  useEffect(() => {
+    if (isDarkMode) {
+      document.body.classList.add('dark');
+    } else {
+      document.body.classList.remove('dark');
+    }
+  }, [isDarkMode]);
+
+  const toggleTheme = () => {
+    setIsDarkMode(!isDarkMode);
+  };
 
   return (
     <>
@@ -54,6 +67,27 @@ const Header = () => {
               />
             </div>
             <div className="menu-components d-flex align-items-center">
+              {/* Botón de toggle tema */}
+              <button
+                onClick={toggleTheme}
+                className="theme-toggle-btn d-flex align-items-center justify-content-center "
+                aria-label="Toggle theme"
+                style={{
+                  color: 'currentColor',
+                  background: 'transparent',
+                  border: '2px solid currentColor',
+                  borderRadius: '50%',
+                  width: '40px',
+                  height: '40px',
+                  cursor: 'pointer',
+                  marginRight: '15px',
+                  transition: 'all 0.3s ease'
+                }}
+              >
+                <i className={`bi ${isDarkMode ? 'bi-sun-fill text-white' : 'bi-moon-fill'}`}
+                   style={{ fontSize: '18px' }} />
+              </button>
+
               <Link
                 to="#contact"
                 className="d-none d-xl-flex lets-talk align-items-center"

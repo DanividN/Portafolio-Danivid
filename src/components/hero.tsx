@@ -72,8 +72,8 @@ const Hero = () => {
                 className="intro-info d-none d-md-block wow fadeInUp"
                 data-wow-delay=".9s"
               >
-                Soy ingeniero en TIC’s y desarrollador web con más de 4 años
-                de experiencia. Trabajo principalmente con Laravel y React, y me
+                Soy ingeniero en TIC’s y desarrollador web con más de 4 años de
+                experiencia. Trabajo principalmente con Laravel y React, y me
                 apasiona crear soluciones tecnológicas eficientes y bien
                 diseñadas.
               </h6>
@@ -94,7 +94,11 @@ const Hero = () => {
                         Contacto <i className="bi bi-arrow-up-right" />
                       </button>
                     </Link>
-                    <button type="button" className="bttn bttn-secondary" onClick={descargarCV}>
+                    <button
+                      type="button"
+                      className="bttn bttn-secondary"
+                      onClick={descargarCV}
+                    >
                       Descargar CV <i className="bi bi-arrow-up-right" />
                     </button>
                   </div>
@@ -133,15 +137,22 @@ const Hero = () => {
           </span>
           <div className="m-content d-flex flex-wrap d-block d-md-none">
             <h6 className="intro-info wow fadeInUp" data-wow-delay="1.2s">
-              I believe that collaboration and creativity are the essence of
-              progress. And i am dedicated to bringing a fresh perspe to every
-              project undertake.
+              Soy ingeniero en TIC’s y desarrollador web con más de 4 años de
+              experiencia. Trabajo principalmente con Laravel y React, y me
+              apasiona crear soluciones tecnológicas eficientes y bien
+              diseñadas.
             </h6>
-            <button type="button" className="bttn bttn-primary">
-              Let’s Talk <i className="bi bi-arrow-up-right" />
-            </button>
-            <button type="button" className="bttn bttn-secondary">
-              Download CV <i className="bi bi-arrow-up-right" />
+            <Link to="#contact">
+              <button type="button" className="bttn bttn-primary">
+                Contacto <i className="bi bi-arrow-up-right" />
+              </button>
+            </Link>
+            <button
+              type="button"
+              className="bttn bttn-secondary"
+              onClick={descargarCV}
+            >
+              Descargar CV <i className="bi bi-arrow-up-right" />
             </button>
           </div>
         </div>
