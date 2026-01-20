@@ -1,11 +1,9 @@
+import { useContactForm } from "@/hooks/useContactForm";
 import { menuList } from "@/lib/mockData/menuList";
 import { Link } from "react-router-dom";
-const contacts = [
-  { email: "Pertest@gmail.com", phone: "(704) 555-0127" },
-  { email: "Pertest@gmail.com", phone: "(704) 555-0127" },
-  { email: "Pertest@gmail.com", phone: "(704) 555-0127" },
-];
+const contacts = [{ email: "danividnerip@gmail.com", phone: "(722) 786-1343" }];
 const Contact = () => {
+  const { handleSubmit, isSubmitting, message } = useContactForm();
   return (
     <section id="contact" className="contact section-mt">
       <div className="marquee section-pt">
@@ -38,8 +36,7 @@ const Contact = () => {
             </p>
             <form
               id="contact-form"
-              action="send_email.php"
-              method="POST"
+              onSubmit={handleSubmit}
               className="wow fadeInLeft"
               data-wow-delay=".5s"
             >
@@ -116,10 +113,25 @@ const Contact = () => {
                   defaultValue={""}
                 />
               </div>
-              <button type="submit" className="bttn  bttn-theme">
-                Contacto <i className="bi bi-arrow-up-right" />
+              <button
+                type="submit"
+                className="bttn bttn-theme"
+                disabled={isSubmitting}
+              >
+                {isSubmitting ? "Enviando..." : "Contacto"}
+                <i className="bi bi-arrow-up-right" />
               </button>
             </form>
+            {message && (
+              <p
+                id="form-message"
+                className={
+                  message.includes("error") ? "text-danger" : "text-success"
+                }
+              >
+                {message}
+              </p>
+            )}
             <p id="form-message" />
           </div>
           <div className="col-lg-5 ms-auto my-auto">
