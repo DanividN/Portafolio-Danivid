@@ -1,10 +1,9 @@
-import { useState } from "react";
-import { Modal } from "react-responsive-modal";
+
 import "react-responsive-modal/styles.css";
 import { Link } from "react-router-dom";
 
 const PortfolioDetailsPopUp = ({ liga }: { liga: string }) => {
-  const [open, setOpen] = useState(false);
+  
 
   return (
     <>
