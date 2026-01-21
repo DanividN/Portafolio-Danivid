@@ -1,7 +1,7 @@
 import { useContactForm } from "@/hooks/useContactForm";
 import { menuList } from "@/lib/mockData/menuList";
 import { Link } from "react-router-dom";
-const contacts = [{ email: "moc.liame@pirendivinad", phone: "(722) 786-1343" }];
+const contacts = [{ email: "moc.liame@pirendivinad", phone: "786-1343(722)" }];
 const Contact = () => {
   const { handleSubmit, isSubmitting, message } = useContactForm();
   return (
@@ -9,7 +9,7 @@ const Contact = () => {
       <div className="marquee section-pt">
         <h3>
           <span className="marquee-wrapper">
-            {[...Array(2)].map((_, i) => (
+            {[...Array(3)].map((_, i) => (
               <span key={i} className="marquee-title">
                 {contacts.map((item, index) => (
                   <span key={index}>
