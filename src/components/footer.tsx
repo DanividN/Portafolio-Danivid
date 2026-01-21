@@ -8,12 +8,7 @@ const Footer = () => {
           </h4>
           <p className="copy-right mx-auto mx-md-0">
             © 2026{" "}
-            <a
-              href="https://themeforest.net/user/themes_mountain"
-              target="_blank"
-            >
               Danivid N{" "}
-            </a>
             - All rights reserved.
           </p>
         </div>
