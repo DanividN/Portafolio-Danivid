@@ -115,13 +115,20 @@ const Hero = () => {
                     data-wow-delay="1.9s"
                   >
                     <li>
-                      <Link to="https://github.com/DanividN" target="_blank">
+                      <Link
+                        to="https://github.com/DanividN"
+                        target="_blank"
+                        aria-label="GitHub de Danivid Neri Pichardo"
+                        rel="noopener noreferrer"
+                      >
                         <i className="fa-brands fa-github" />
                       </Link>
                     </li>
                     <li>
                       <Link
                         to="https://www.linkedin.com/in/danivid-neri-pichardo-742068168/"
+                        aria-label="LinkedIn de Danivid Neri Pichardo"
+                        rel="noopener noreferrer"
                         target="_blank"
                       >
                         <i className="fa-brands fa-linkedin-in" />
