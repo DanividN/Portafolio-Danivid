@@ -966,6 +966,11 @@ h6 {
   background: var(--clr-orange);
   color: var(--clr-white);
 }
+.email-reverse {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+  cursor: pointer;
+}
 
 .sub-contact {
   background: #e9f0ff;

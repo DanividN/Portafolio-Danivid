@@ -56,7 +56,7 @@ const SidebarContact = ({
                   className="textp"
                   aria-label="Enviar correo a danividnerip"
                 >
-                    danividnerip&#64;gmail&#46;com
+                    <span className="email-reverse textp">moc.liame@pirendivinad</span>
                 </a>
               </div>
             </div>

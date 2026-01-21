@@ -1,11 +1,29 @@
 import { useContactForm } from "@/hooks/useContactForm";
 import { menuList } from "@/lib/mockData/menuList";
 import { Link } from "react-router-dom";
+const contacts = [{ email: "moc.liame@pirendivinad", phone: "(722) 786-1343" }];
 const Contact = () => {
   const { handleSubmit, isSubmitting, message } = useContactForm();
   return (
     <section id="contact" className="contact section-mt">
-
+      <div className="marquee section-pt">
+        <h3>
+          <span className="marquee-wrapper">
+            {[...Array(2)].map((_, i) => (
+              <span key={i} className="marquee-title">
+                {contacts.map((item, index) => (
+                  <span key={index}>
+                    <span className="text-stroke-white">
+                     <a href={`mailto:${item.email}`} className="email-reverse"> {item.email}</a>  _&nbsp;
+                    </span>
+                    {item.phone} _&nbsp;
+                  </span>
+                ))}
+              </span>
+            ))}
+          </span>
+        </h3>
+      </div>
       <div className="container">
         <div className="contact-content row">
           <div className="col-lg-6">
