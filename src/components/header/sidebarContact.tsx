@@ -8,6 +8,13 @@ const SidebarContact = ({
   isSidebarOpen: boolean;
   setIsSidebarOpen: Dispatch<SetStateAction<boolean>>;
 }) => {
+
+  const openEmail = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    const parts = ['danividnerip', 'email', 'com'];
+    window.location.href = `mailto:${parts[0]}@${parts[1]}.${parts[2]}`;
+  };
+  
   return (
     <>
       <div
@@ -43,15 +50,20 @@ const SidebarContact = ({
             <div className="sub-contac-item">
               <div className="address-widget">
                 <span className="address d-block">email</span>
-                <Link to="#" className="textp">
-                  <a href="mailto:danividnerip@email.com">danividnerip@email.com</a>
-                </Link>
+                <a 
+                  href="#contact" 
+                  onClick={openEmail}
+                  className="textp"
+                  aria-label="Enviar correo a danividnerip"
+                >
+                    danividnerip&#64;gmail&#46;com
+                </a>
               </div>
             </div>
             <div className="sub-contac-item">
               <div className="address-widget">
                 <span className="address d-block">Teléfono</span>
-                <Link to="jasacript:void(0)" className="textp">
+                <Link to="jasacript:void(0)" className="textp" aria-label="Teléfono de Danivid Neri Pichardo">
                   +52 7227861343
                 </Link>
               </div>
