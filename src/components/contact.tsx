@@ -14,7 +14,7 @@ const Contact = () => {
                 {contacts.map((item, index) => (
                   <span key={index}>
                     <span className="text-stroke-white">
-                      {item.email} _&nbsp;
+                     <a href={`mailto:${item.email}`}>{item.email}</a> _&nbsp;
                     </span>
                     {item.phone} _&nbsp;
                   </span>
